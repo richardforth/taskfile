@@ -3,9 +3,11 @@
 version: '3'
 
 vars:
+  AG: Azure 'Application Gateway'
   MIP: Microsoft Information Protection
   MIV: max_input_vars (PHP Setting)
   MRW: MaxRequestWorkers (Apache Setting)
+  NSG: Azure 'Network Service Gateway'
   OKR: Objectives and Key Results
   RCA: Root Cause Analysis
   RFC: |
@@ -18,6 +20,10 @@ tasks:
     cmds:
       - echo "{{.GREETING}}"
     silent: true
+  ag:
+    cmds:
+      - echo "{{.AG}}"
+    silent: true
   mip:
     cmds:
       - echo "{{.MIP}}"
@@ -29,6 +35,10 @@ tasks:
   mrw:
     cmds:
       - echo "{{.MRW}}"
+    silent: true
+  nsg:
+    cmds:
+      - echo "{{.NSG}}"
     silent: true
   okr:
     cmds:
