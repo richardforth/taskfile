@@ -4,6 +4,9 @@ version: '3'
 
 vars:
   OKR: Objectives and Key Results
+  RFC: |
+     Request for Comments
+     Request for Change
   GREETING: try 'task okr' to see what OKR stands for
 
 tasks:
@@ -14,4 +17,7 @@ tasks:
   okr:
     cmds:
       - echo "{{.OKR}}"
+  rfc:
+    cmds:
+      - echo "{{.RFC}}"
     silent: true
