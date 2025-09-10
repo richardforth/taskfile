@@ -4,6 +4,7 @@ version: '3'
 
 vars:
   OKR: Objectives and Key Results
+  RCA: Root Cause Analysis
   RFC: |
      Request for Comments
      Request for Change
@@ -17,6 +18,11 @@ tasks:
   okr:
     cmds:
       - echo "{{.OKR}}"
+    silent: true
+  rca:
+    cmds:
+      - echo "{{.RCA}}"
+    silent: true
   rfc:
     cmds:
       - echo "{{.RFC}}"
