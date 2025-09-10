@@ -4,6 +4,8 @@ version: '3'
 
 vars:
   MIP: Microsoft Information Protection
+  MIV: max_input_vars (PHP Setting)
+  MRW: MaxRequestWorkers (Apache Setting)
   OKR: Objectives and Key Results
   RCA: Root Cause Analysis
   RFC: |
@@ -19,6 +21,14 @@ tasks:
   mip:
     cmds:
       - echo "{{.MIP}}"
+    silent: true
+  miv:
+    cmds:
+      - echo "{{.MIV}}"
+    silent: true
+  mrw:
+    cmds:
+      - echo "{{.MRW}}"
     silent: true
   okr:
     cmds:
