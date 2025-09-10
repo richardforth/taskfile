@@ -1,0 +1,18 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+  hello:
+    dotenv:
+      - '.env'
+    cmds:
+      - 'echo "Endpoint is: $ENDPOINT"'
+    silent: true
