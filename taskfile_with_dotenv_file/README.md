@@ -6,7 +6,7 @@ $ task hello
 Endpoint is: testing123.com
 ```
 
-I disallow committing .env files to GitHub, nut it contains the following (non-sensitive) value:
+I disallow committing .env files to GitHub, but it contains the following (non-sensitive) value:
 
 ```bash
 ENDPOINT=testing123.com
