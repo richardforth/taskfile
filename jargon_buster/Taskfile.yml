@@ -3,6 +3,7 @@
 version: '3'
 
 vars:
+  MIP: Microsoft Information Protection
   OKR: Objectives and Key Results
   RCA: Root Cause Analysis
   RFC: |
@@ -14,6 +15,10 @@ tasks:
   default:
     cmds:
       - echo "{{.GREETING}}"
+    silent: true
+  mip:
+    cmds:
+      - echo "{{.MIP}}"
     silent: true
   okr:
     cmds:
