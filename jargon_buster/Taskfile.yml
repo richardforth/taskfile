@@ -7,6 +7,8 @@ vars:
   AKA: Also Known As
   AS: Application Server
   ASR: Azure Site Recovery
+  IEEE: Institute of Electrical and Electronics Engineers
+  IETF: Internet Engineering Task Force
   MIP: Microsoft Information Protection
   MIV: max_input_vars (PHP Setting)
   MRW: MaxRequestWorkers (Apache Setting)
@@ -38,6 +40,14 @@ tasks:
   asr:
     cmds:
       - echo "{{.ASR}}"
+    silent: true
+  ieee:
+    cmds:
+      - echo "{{.IEEE}}"
+    silent: true
+  ietf:
+    cmds:
+      - echo "{{.IETF}}"
     silent: true
   mip:
     cmds:
