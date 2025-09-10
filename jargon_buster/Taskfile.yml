@@ -13,6 +13,7 @@ vars:
      Data Centre
      Direct Current
      Also sometimes referred to as the place Washington D.C. (District of Columbia)
+  DRAAS: Disaster Recovery as a Service (Microsoft Azure Service)
   IEEE: Institute of Electrical and Electronics Engineers
   IETF: Internet Engineering Task Force
   MIP: Microsoft Information Protection
@@ -60,6 +61,11 @@ tasks:
     cmds:
       - echo "{{.DC}}"
     silent: true
+  draas:
+    cmds:
+      - echo "{{.DRAAS}}"
+    silent: true
+  
   ieee:
     cmds:
       - echo "{{.IEEE}}"
