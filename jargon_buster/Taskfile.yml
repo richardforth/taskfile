@@ -4,6 +4,9 @@ version: '3'
 
 vars:
   AG: Azure 'Application Gateway'
+  AKA: Also Known As
+  AS: Application Server
+  ASR: Azure Site Recovery
   MIP: Microsoft Information Protection
   MIV: max_input_vars (PHP Setting)
   MRW: MaxRequestWorkers (Apache Setting)
@@ -23,6 +26,18 @@ tasks:
   ag:
     cmds:
       - echo "{{.AG}}"
+    silent: true
+  aka:
+    cmds:
+      - echo "{{.AKA}}"
+    silent: true
+  as:
+    cmds:
+      - echo "{{.AS}}"
+    silent: true
+  asr:
+    cmds:
+      - echo "{{.ASR}}"
     silent: true
   mip:
     cmds:
