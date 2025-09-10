@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  msg:
+    cmds:
+      - 'echo "Home directory is: $HOME"'
+      - 'echo "Message is: {{.MESSAGE}}"'
+    vars:
+      MESSAGE: Testing123
