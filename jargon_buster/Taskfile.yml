@@ -3,10 +3,16 @@
 version: '3'
 
 vars:
+  AC: Alternating Current
   AG: Azure 'Application Gateway'
   AKA: Also Known As
   AS: Application Server
   ASR: Azure Site Recovery
+  CSV: Comma Separated Values (File Format)
+  DC: |
+     Data Centre
+     Direct Current
+     Also sometimes referred to as the place Washington D.C. (District of Columbia)
   IEEE: Institute of Electrical and Electronics Engineers
   IETF: Internet Engineering Task Force
   MIP: Microsoft Information Protection
@@ -18,12 +24,17 @@ vars:
   RFC: |
      Request for Comments
      Request for Change
+  TSV: Tab Separated Values (File Format)
   GREETING: try 'task okr' to see what OKR stands for
 
 tasks:
   default:
     cmds:
       - echo "{{.GREETING}}"
+    silent: true
+  ac:
+    cmds:
+      - echo "{{.AC}}"
     silent: true
   ag:
     cmds:
@@ -40,6 +51,14 @@ tasks:
   asr:
     cmds:
       - echo "{{.ASR}}"
+    silent: true
+  csv:
+    cmds:
+      - echo "{{.CSV}}"
+    silent: true
+  dc:
+    cmds:
+      - echo "{{.DC}}"
     silent: true
   ieee:
     cmds:
@@ -76,4 +95,8 @@ tasks:
   rfc:
     cmds:
       - echo "{{.RFC}}"
+    silent: true
+  tsv:
+    cmds:
+      - echo "{{.TSV}}"
     silent: true
