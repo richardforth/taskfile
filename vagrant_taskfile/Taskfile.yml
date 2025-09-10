@@ -1,0 +1,9 @@
+version: 3
+
+tasks:
+  default:
+    dir: /vagrant/git/taskfile
+    cmds:
+      - git fetch && git pull
+      - ls -l
+    silent: true
