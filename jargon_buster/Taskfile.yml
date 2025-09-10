@@ -1,0 +1,17 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  OKR: Objectives and Key Results
+  GREETING: try 'task okr' to see what OKR stands for
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+  okr:
+    cmds:
+      - echo "{{.OKR}}"
+    silent: true
