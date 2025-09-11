@@ -1,0 +1,10 @@
+version: '3'
+
+tasks:
+  os-version:
+    cmds:
+      - echo "OS version is {{.VERSION}}"
+    vars:
+      VERSION: 
+        sh: cat /etc/os-release | grep "VERSION_ID" | cut -d "=" -f2
+        
