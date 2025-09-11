@@ -6,4 +6,5 @@ tasks:
     cmds:
       - git fetch && git pull
       - ls -l
+      - echo 'Now run "cd /vagrant/git/taskfile"'
     silent: true
