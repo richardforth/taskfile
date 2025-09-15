@@ -2,6 +2,7 @@ version: 3
 
 tasks:
   default:
+    desc: "do the needful with git fetch/pull in working dir /vagrant/git/taskfile"
     dir: /vagrant/git/taskfile
     cmds:
       - git fetch && git pull
