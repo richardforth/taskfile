@@ -1,0 +1,26 @@
+version: '3'
+
+tasks:
+  npm:build:
+    deps:
+      - npm:install
+    requires:
+      vars:
+        - SRC_DIR
+    dir: "{{.SRC_DIR}}"
+    sources:
+      - '**/*.js'
+    cmds:
+      - npm run build
+    desc: "Build the npm project in the specified source directory"
+
+  npm:install:
+    requires:
+      vars:
+        - SRC_DIR
+    dir: "{{.SRC_DIR}}"
+    cmds:
+      - npm install
+    sources:
+      - package.json
+    desc: "Install npm dependencies for the project in the specified source directory"
