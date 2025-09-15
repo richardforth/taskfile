@@ -1,6 +1,13 @@
 version: '3'
 
 tasks:
+  npm:build:
+    cmds:
+      - npm install && npm run build
+    requires:
+      vars:
+      - SRC_DIR
+    dir: "{{.SRC_DIR}}"
   node:install:
     cmds:
       - cmd: |-
