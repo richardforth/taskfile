@@ -1,0 +1,17 @@
+version: '3'
+
+tasks:
+  node:install:
+    cmds:
+      - cmd: |-
+          echo "Installing nodejs and npm on Linux"
+          sudo apt-get update && sudo apt install -y nodejs npm
+        platforms:
+        - linux
+      - cmd: |-
+          echo "Installing nodejs and npm on macOS"
+          brew install nodejs
+          brew install npm
+        platforms:
+        - darwin
+    desc: "Install Node.js and npm based on the OS"
