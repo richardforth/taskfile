@@ -1,4 +1,4 @@
 version: '3'
 includes:
-  # Note this URL is unique and invalid nowm kept as an example
+  # Note this URL is unique and invalid now, kept as an example
   app: https://9090-port-jawsklblu466n26k.labs.kodekloud.com/root/tasktemplates/-/raw/master/Taskfile.yml?ref_type=heads
